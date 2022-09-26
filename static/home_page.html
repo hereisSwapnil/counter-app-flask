@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="center">
+        <h2 id="name">Counter App</h2>
+        <div class="content">
+            <div class="number">
+                <h2>{{number}}</h2>
+                <!-- <h2>0</h2> -->
+            </div>
+        </div>
+        <div class="buttons">
+            <form action="./decrement">
+                <button id="decrement">-</button>
+            </form>
+            <form action="./increment">
+                <button id="increment">+</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
