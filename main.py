@@ -19,4 +19,4 @@ def increment():
     database["number"] += 1
     return render_template("home_page.html",number = database["number"])
 
-app.run(host="0.0.0.0", port=5000, debug=True)
+app.run(host="0.0.0.0", port=5000)
